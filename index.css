@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", serif;
+  font-optical-sizing: auto;
+}
+body{
+  background-image: url(./images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 1em;
+}
+:root{
+  --cyan:hsl(171, 66%, 44%);
+  --Blue:hsl(233, 100%, 69%);
+  --dark_grayish_blue: hsl(210, 10%, 33%);
+  --grayish_blue:hsl(201, 11%, 66%);
+}
+.section_1 ,.section_2,.section_3, .section_4{
+  text-align: center;
+  
+}
+.section_2 , .section_3 , .section_4{
+  padding-top: 4em;
+}
+
+.section_1-title ,.section_2-title , .section_3-title ,.section_4-title{
+  padding-top: 5px;
+  padding-bottom: 1em;
+}
+.section_1-title h2 ,.section_2-title h2 , .section_3-title h2, .section_4-title h2{
+  padding-bottom: 3px;
+}
+.section_1-title p, .section_2-title p , .section_3-title p ,.section_4-title p{
+  color: var(--grayish_blue);
+  padding-bottom: 10px;
+  line-height: 1.5em;
+}
+.download-buttons{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+
+}
+.section_1 .ioc , .mac, .section_4 .ioc , .mac{
+  padding: 12px 15px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  margin-left: 5px;
+  color: white;
+  box-shadow: 1px 2px 2px 2px rgba(0,0,0,0.1);
+  transition: all 0.20s;
+  cursor: pointer;
+}
+.ioc{
+  background-color: var(--Blue);
+}
+.mac{
+  background-color: var(--cyan);
+}
+.ioc:hover, .mac:hover{
+  opacity: 0.7;
+}
+.computer{
+  padding-top: 20px;
+}
+.section-content .first , .second, .third{
+  padding-top: 20px;
+}
+.section-content .first p, .second p, .third p, .first-content p{
+  color: var(--grayish_blue);
+  padding-top: 5px;
+}
+.section-third-content{
+  padding-top: 2em;
+}
+.first-content-flex ,.second-content-flex , .third-content-flex{
+  padding: 1em 0;
+}
+.section-third-content .first-content-flex h3 , .second-content-flex h3, .third-content-flex h3{
+  padding: 0.6em 0;
+}
+.section-third-content .first-content-flex p ,.second-content-flex p , .third-content-flex p{
+  color: var(--grayish_blue);
+  padding: 0.3em 0;
+}
+.section-third-icon{
+  padding: 1.5em 0;
+}
+.section-third-icon .icons{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5em;
+}
+.section_4 .download-buttons{
+  padding-bottom: 1em;
+}
+footer{
+  display: flex;
+  justify-content: center;
+  padding: 2em 0;
+  background-color:rgba(147, 146, 146, 0.219);
+}.logo{
+  padding-bottom: 1em;
+}
+ul li{
+  list-style: none;
+  padding: 0.5em 0;
+  color: var(--dark_grayish_blue);
+  cursor: pointer;
+  transition: all 0.30s;
+}
+ul li:hover{
+  color: var(--cyan);
+}
+.social-media-icons{
+  display: flex;
+  padding-top: 2em;
+  gap: 2em;
+  cursor: pointer;
+}
+.fb:hover{
+  fill: var(--cyan);
+}
+@media screen and (min-width:768px){
+  body{
+    background-image: url(./images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1em;
+  }
+
+  .download-buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+  }
+  .computer{
+    display: flex;
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+  }
+  .section-third-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-third-content p{
+    width: 30vw;
+  }
+  .section-third-icon .icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  ul li{
+    display: inline-flex;
+    padding-left: 20px;
+    cursor: pointer;
+  }
+  footer{
+    height: 15vh;
+  }
+  .logo{
+    display: flex;
+    justify-content: flex-start;  
+  }
+  .social-media-icons{
+    display: flex;
+    justify-content: end;
+  }
+}
